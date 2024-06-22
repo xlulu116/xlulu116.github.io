@@ -1,0 +1,129 @@
+/* body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(../IMG/a.jpg) ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* header区 */
+#flex-container {  
+    display: flex;  
+    align-items: center;  
+}  
+#flex-container img {
+    border-radius: 50%;  
+    margin-right: 10px;
+    max-width: 120px; 
+        height: auto; 
+}  
+header{
+    background:url(../IMG/a.jpg) center  120px;
+    width:100%;
+}
+/* nav区 */
+nav {  
+    background-color: #a3d1ec; 
+    color: #fff;  
+    padding: 10px 0;
+    width:100%;
+}
+nav ul {  
+    list-style-type: none; 
+    padding: 0;  
+    margin: 0; 
+    display: flex;  
+    justify-content: space-between; 
+}    
+nav a {  
+    color: #fff;  
+    text-decoration: none; 
+    display: inline-block;   
+    padding: 10px 20px; 
+    margin-right: 10px;  
+    transition: background-color 0.3s ease;   
+}  
+nav a:hover,  
+nav a.active {  
+    background-color: #666; 
+}   
+/* 同index页面一致 */
+/* main区 */
+main {
+    display: flex;
+    flex: 1;
+    padding: 32px;
+    margin: 16px auto;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* 采用弹性布局 */
+
+section#hobbies-content {
+    flex: 3;
+    /* 在弹性布局里有着更强的拓展能力 */
+    padding: 32px;
+}
+section#hobbies-content h2 {
+    color: #1e90ff; 
+}
+.hobbies-table {
+    display: table;
+    width: 100%;
+    margin-top: 16px;
+}
+.hobby-cell {
+    display: table-cell;
+    padding: 16px;
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.hobby-cell img {
+    width: 100px;
+    height: auto;
+}
+.hobby-cell h3 {
+    color: #1e90ff;
+    margin-top: 0.5rem;
+}
+/* 边栏导航区 */
+aside#sidebar {
+    flex: 1;
+    padding: 16px;
+    background-color: #f0f8ff; 
+    border-right: 1px solid #ddd;
+}
+aside#sidebar h3 {
+    color: #1e90ff; 
+}
+aside#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+aside#sidebar ul li {
+    margin-bottom: 8px;
+}
+/* 更改超链接格式 */
+aside#sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+aside#sidebar ul li a:hover {
+    text-decoration: underline;
+}
+/* footer区 */
+footer {
+    background-image: url(../IMG/a.jpg);
+    color:            #477581;
+    text-align:       center;
+    padding:          15px;
+    margin: 0px 10px 10px 10px;
+    font-size:        90%;
+}

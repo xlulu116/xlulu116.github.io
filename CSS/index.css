@@ -1,0 +1,85 @@
+/* body区 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(../IMG/a.jpg) ;
+    background-size: cover;
+    display: flex;
+    /* 指定了flex容器的主轴方向为垂直，因为默认主轴是水平方向的 */
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* 采用flex布局，并且其最小高度始终与浏览器窗口的可见区域高度相同，确保页面上
+内容可以铺满浏览器的高度。 */
+
+/* header区 */
+#flex-container {  
+    display: flex;  
+    align-items: center;  
+}  
+#flex-container img {  
+    margin-right: 10px;
+    max-width: 120px; 
+        height: auto; 
+    border-radius: 50%;
+    /* 头像变成圆形 */
+}  
+header{
+    background:url(../IMG/a.jpg) center  120px;
+    width:100%;
+}
+/* 将头像和文字放在flex容器中视为一个盒子 */
+
+/* nav区 */
+nav {  
+    background-color: #a3d1ec; 
+    color: #fff;  
+    padding: 10px 0;
+    width:100%;
+}
+nav ul {  
+    list-style-type: none; 
+    padding: 0;  
+    margin: 0; 
+    display: flex;  
+    justify-content: space-between; 
+    /* 在flex容器的主轴上均匀分布列表项，第一个列表项靠左，最后一个列表项靠右，中间的列表项等距分布 */
+} 
+/* nav区的布局也为弹性flex布局 */
+nav a {  
+    color: #fff;  
+    text-decoration: none; 
+    display: inline-block;
+       /*设置为内联块级元素，既可以并排显示，又可以设置宽度和高度   */
+    padding: 10px 20px; 
+    margin-right: 10px;  
+    transition: background-color 0.3s ease;
+       /*有一个过渡效果  */
+}
+nav a:hover,  
+nav a.active {  
+    background-color: #666; 
+}   
+
+ /*main区*/
+ section {  
+    display: grid;  
+    place-items: center;
+    height: 500px;  
+}
+/* 采用grid布局，可以使文字水平和垂直，在二维平面上居中显示 */
+section p{
+    font-size: 35px;
+}
+  /*footer区*/
+  footer {
+    background-image: url(../IMG/a.jpg);
+    color:            #477581;
+    text-align:       center;
+    padding:          15px;
+    margin: 0px 10px 10px 10px;
+    font-size:        90%;
+  }

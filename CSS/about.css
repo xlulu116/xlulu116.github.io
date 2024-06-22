@@ -1,0 +1,112 @@
+/* body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(../IMG/a.jpg) ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* header区 */
+#flex-container {  
+    display: flex;  
+    align-items: center;  
+}  
+#flex-container img {  
+    margin-right: 10px;
+    max-width: 120px; 
+        height: auto;
+    border-radius: 50%;
+     /*头像变成圆形的  */
+}  
+header{
+    background:url(../IMG/a.jpg) center  120px;
+    width:100%;
+}
+/* nav区 */
+nav {  
+    background-color: #a3d1ec; 
+    color: #fff;  
+    padding: 10px 0;
+    width:100%;
+}
+nav ul {  
+    list-style-type: none; 
+    padding: 0;  
+    margin: 0; 
+    display: flex;  
+    justify-content: space-between; 
+}    
+nav a {  
+    color: #fff;  
+    text-decoration: none; 
+    display: inline-block;   
+    padding: 10px 20px; 
+    margin-right: 10px;  
+    transition: background-color 0.3s ease;   
+}  
+nav a:hover,  
+nav a.active {  
+    background-color: #666; 
+}   
+/* 同index页面css样式一致 */
+/* main区 */
+main {
+    padding: 32px;
+    margin: auto;
+    max-width: 800px;
+    background: rgb(233, 244, 246);
+}
+
+section#photo {
+    text-align: center;
+}
+section#photo img {
+    max-width: 200px;
+    margin-bottom: 16px;
+}
+
+section#intro table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 给表格增添阴影效果 */
+}
+
+section#intro caption {
+    caption-side: top;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    color: #1e90ff; 
+}
+section#intro table, th, td {
+    border: 1px solid #ddd;
+}
+section#intro th, td {
+    padding: 12px;
+    text-align: left;
+}
+section#intro tr:nth-child(even) {
+    background-color: #f0f8ff; 
+}
+
+section#introduction {
+    margin-top: 32px;
+}
+section#introduction h2 {
+    color: #1e90ff;}
+
+/* footer区 */
+footer {
+    background-image: url(../IMG/a.jpg);
+    color:            #477581;
+    text-align:       center;
+    padding:          15px;
+    margin: 0px 10px 10px 10px;
+    font-size:        90%;
+}

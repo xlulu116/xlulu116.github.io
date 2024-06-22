@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="./CSS/messages.css">
+</head>
+<body>
+    <!-- header页眉区开始 -->
+    <header id="flex-container">
+        <img src="./IMG/profile photo.png" alt="header">
+        <h1>XinXin's World</h1>
+    </header>
+    <!-- header页眉区结束 -->
+     <!-- nav导航区开始 -->
+    <nav>
+        <ul>
+            <li><a href="./index.html">主页</a></li>   
+            <li><a href="./about.html">关于我</a></li>  
+            <li><a href="./hobbies.html">兴趣爱好</a></li>  
+            <li><a href="./messages.html">给我留言</a></li>  
+        </ul>
+    </nav>
+    <!-- nav导航区结束 -->
+     <!-- 主体内容开始 -->
+    <section class="wrapper">
+        <!-- 边栏区开始 -->
+        <aside id="sidebar">
+            <h3>我的联系方式</h3>
+            <p>Email: 1572704052@qq.com
+            </p >
+            <p>电话: +13835856784</p >
+        </aside>
+        <!-- 边栏区结束 -->
+         <!-- 留言区开始 -->
+        <main id="main-content">
+            <!-- 留言板 -->
+            <section id="messages">
+                <h2>留言板</h2>
+                <div id="message-board">
+                    <!-- 留言内容将会动态显示在这里 -->
+                </div>
+            </section>
+            <!-- 留言板结束，采用JavaScript使留言内容显示在上面 -->
+             <!-- 表单，用于提交留言开始 -->
+            <section id="message-form">
+                <h2>给我留言</h2>
+                <form id="messageForm" action="#" method="post">
+                    <label for="name">姓名：</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="message">留言内容：</label><br>
+                    <textarea id="message" name="message" rows="6" required></textarea><br><br>
+                    <input type="submit" value="提交">
+                </form>
+            </section>
+              <!--表单结束  -->
+        </main>
+    </section>
+    <!-- 主体内容结束 -->
+     <!-- 页脚区开始 -->
+    <footer>
+        <p>&copy; 2024 常世馨的个人主页 - 版权所有</p >
+    </footer>
+    <!-- 页脚区结束 -->
+    <script src="messages.js"></script>
+    <!-- 用于使留言内容同步显示在页面 -->
+</body>
+</html>
